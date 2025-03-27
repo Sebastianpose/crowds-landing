@@ -22,11 +22,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
 
     .logo {
-      width: 300px;
-      max-width: 80%;
+      width: 900px;
+      max-width: 90%;
     }
 
     .tagline {
@@ -38,8 +39,14 @@
     }
 
     @media (max-width: 600px) {
+      body {
+        justify-content: flex-start;
+        padding-top: 25vh;
+        background-position: right center;
+      }
+
       .logo {
-        width: 180px;
+        width: 250px;
       }
 
       .tagline {
