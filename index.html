@@ -44,21 +44,20 @@
     }
 
     @media (max-width: 768px) {
-     body {
+    body {
     background-position: right;
-    justify-content: flex-start;
-    padding-top: 60px;
+    padding-top: 0; /* ya no necesario si usamos posición absoluta */
   }
 
   .logo {
-    top: 25%; /* Estaba en 18%, ahora lo bajamos */
-    width: 85% !important; /* Estaba en 65%, lo agrandamos */
+    top: 35% !important;           /* Más abajo que 25% */
+    width: 90% !important;         /* Más ancho */
     max-width: none !important;
   }
 
   .launching-text {
-    bottom: 70px;
-    font-size: 0.9rem;
+    bottom: 50px;
+    font-size: 1rem;
   }
 }
   </style>
