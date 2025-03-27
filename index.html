@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>CROWDS</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <style>
@@ -12,52 +12,54 @@
     }
 
     body {
-      background: #000 url("launching-soon.png") no-repeat;
+      background: #000;
+      background-image: url("launching-soon.png");
       background-size: cover;
       background-position: center;
       height: 100vh;
       font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: white;
       position: relative;
     }
 
     .logo {
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 350px;
+      width: 30%; /* Logo más grande en web */
+      max-width: 500px;
     }
 
-    .tagline {
+    .launching-text {
       position: absolute;
-      bottom: 30px;
-      width: 100%;
-      text-align: center;
+      bottom: 40px;
       font-size: 1rem;
       color: white;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
       body {
-        background-position-x: 100%;
-        background-position-y: center;
+        background-position: right; /* Alinea imagen a la derecha en móvil */
+        justify-content: flex-start;
+        padding-top: 60px;
       }
 
       .logo {
-        top: 5%;
-        width: 220px;
+        width: 60%; /* Logo más pequeño en móvil */
+        max-width: 300px;
       }
 
-      .tagline {
-        bottom: 70px;
+      .launching-text {
+        bottom: 20px; /* Texto un poco más arriba en móvil */
         font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="CROWDS Logo" class="logo" />
-  <div class="tagline">launching soon</div>
+  <img src="logo.png" alt="CROWDS Logo" class="logo">
+  <div class="launching-text">launching soon</div>
 </body>
 </html>
