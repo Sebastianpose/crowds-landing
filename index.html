@@ -27,9 +27,13 @@
     }
 
     .logo {
-      width: 50%; /* Logo más grande en web */
-      max-width: 800px;
-    }
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 800px;
+}
 
     .launching-text {
       position: absolute;
@@ -46,10 +50,11 @@
         padding-top: 60px;
       }
 
-      .logo {
-        width: 50%; /* Logo más pequeño en móvil */
-        max-width: 250px;
-      }
+     .logo {
+  top: 18%;
+  width: 50%;
+  max-width: 250px;
+}
 
       .launching-text {
         bottom: 20px; /* Texto un poco más arriba en móvil */
